@@ -149,8 +149,8 @@ CREATE TABLE retenir(
 #------------------------------------------------------------
 
 CREATE TABLE avoir(
-        id_droit int (11) Auto_increment  NOT NULL ,
-        id_user  int (11) Auto_increment  NOT NULL ,
+        id_droit int (11)  NOT NULL ,
+        id_user  int (11)  NOT NULL ,
         PRIMARY KEY (id_droit ,id_user )
 )ENGINE=InnoDB;
 

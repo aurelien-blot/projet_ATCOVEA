@@ -18,7 +18,7 @@ CREATE TABLE Demande(
         date_fin_demande           Date ,
         contexte_demande           Varchar (150) ,
         details_prestation_demande Varchar (300) ,
-        statut_demande             Varchar (25) ,
+        statut_demande             Enum (25) ,
         zone_geograpique           Varchar (25) ,
         id_interloc_technique      Int NOT NULL ,
         id_interet                 Int NOT NULL ,

@@ -11,7 +11,7 @@ USE swat_db;
 #------------------------------------------------------------
 
 CREATE TABLE Demande(
-        id_demande                 Int NOT NULL ,
+        id_demande                 int (11) Auto_increment  NOT NULL ,
         code_affaire_demande       Varchar (9) ,
         libelle_demande            Varchar (50) ,
         date_debut_demande         Date ,
@@ -32,7 +32,7 @@ CREATE TABLE Demande(
 #------------------------------------------------------------
 
 CREATE TABLE Interlocuteur_technique(
-        id_interloc_technique   Int NOT NULL ,
+        id_interloc_technique   int (11) Auto_increment  NOT NULL ,
         nom_interloc_technique  Varchar (25) ,
         mail_interloc_technique Varchar (100) ,
         tel_interloc_technique  Int ,
@@ -45,7 +45,7 @@ CREATE TABLE Interlocuteur_technique(
 #------------------------------------------------------------
 
 CREATE TABLE reponse(
-        id_reponse            Int NOT NULL ,
+        id_reponse            int (11) Auto_increment  NOT NULL ,
         sous_traitant_reponse Bool ,
         nb_jours              Int ,
         taux_journalier       Double ,
@@ -61,7 +61,7 @@ CREATE TABLE reponse(
 #------------------------------------------------------------
 
 CREATE TABLE developpeur(
-        id_developpeur          Int NOT NULL ,
+        id_developpeur          int (11) Auto_increment  NOT NULL ,
         nom_developpeur         Varchar (25) ,
         prenom_developpeur      Varchar (25) ,
         competences_developpeur Varchar (300) ,
@@ -138,7 +138,7 @@ CREATE TABLE acheteur(
 #------------------------------------------------------------
 
 CREATE TABLE retenir(
-        id_reponse     Int NOT NULL ,
+        id_reponse     Int Auto_increment NOT NULL ,
         id_developpeur Int NOT NULL ,
         PRIMARY KEY (id_reponse ,id_developpeur )
 )ENGINE=InnoDB;
@@ -149,8 +149,8 @@ CREATE TABLE retenir(
 #------------------------------------------------------------
 
 CREATE TABLE avoir(
-        id_droit Int NOT NULL ,
-        id_user  Int NOT NULL ,
+        id_droit int (11) Auto_increment  NOT NULL ,
+        id_user  int (11) Auto_increment  NOT NULL ,
         PRIMARY KEY (id_droit ,id_user )
 )ENGINE=InnoDB;
 

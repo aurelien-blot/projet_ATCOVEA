@@ -1,7 +1,9 @@
 #------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
-
+DROP DATABASE IF EXISTS swat_db;
+CREATE DATABASE swat_db CHARACTER SET 'utf8';
+USE swat_db;
 
 #------------------------------------------------------------
 # Table: Demande

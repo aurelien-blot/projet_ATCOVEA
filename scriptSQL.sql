@@ -1,9 +1,7 @@
 #------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
-DROP DATABASE IF EXISTS swat_db;
-CREATE DATABASE swat_db CHARACTER SET 'utf8';
-USE swat_db;
+
 
 #------------------------------------------------------------
 # Table: Demande
@@ -19,9 +17,9 @@ CREATE TABLE Demande(
         details_prestation_demande Varchar (300) ,
         statut_demande             Varchar (25) ,
         zone_geograpique           Varchar (25) ,
-        acheteur_demande           Varchar (25) ,
         id_interloc_technique      Int NOT NULL ,
         id_interet                 Int NOT NULL ,
+        id_acheteur                Int ,
         PRIMARY KEY (id_demande )
 )ENGINE=InnoDB;
 
@@ -45,7 +43,7 @@ CREATE TABLE Interlocuteur_technique(
 
 CREATE TABLE reponse(
         id_reponse            Int NOT NULL ,
-        sous_traitant_reponse Boolean ,
+        sous_traitant_reponse Bool ,
         nb_jours              Int ,
         taux_journalier       Double ,
         date_debut            Date ,
@@ -121,6 +119,18 @@ CREATE TABLE type_droit(
 
 
 #------------------------------------------------------------
+# Table: acheteur
+#------------------------------------------------------------
+
+CREATE TABLE acheteur(
+        id_acheteur     int (11) Auto_increment  NOT NULL ,
+        nom_acheteur    Varchar (25) ,
+        prenom_acheteur Varchar (25) ,
+        PRIMARY KEY (id_acheteur )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
 # Table: retenir
 #------------------------------------------------------------
 
@@ -143,6 +153,7 @@ CREATE TABLE avoir(
 
 ALTER TABLE Demande ADD CONSTRAINT FK_Demande_id_interloc_technique FOREIGN KEY (id_interloc_technique) REFERENCES Interlocuteur_technique(id_interloc_technique);
 ALTER TABLE Demande ADD CONSTRAINT FK_Demande_id_interet FOREIGN KEY (id_interet) REFERENCES interet(id_interet);
+ALTER TABLE Demande ADD CONSTRAINT FK_Demande_id_acheteur FOREIGN KEY (id_acheteur) REFERENCES acheteur(id_acheteur);
 ALTER TABLE reponse ADD CONSTRAINT FK_reponse_id_demande FOREIGN KEY (id_demande) REFERENCES Demande(id_demande);
 ALTER TABLE droit ADD CONSTRAINT FK_droit_id_type_droit FOREIGN KEY (id_type_droit) REFERENCES type_droit(id_type_droit);
 ALTER TABLE retenir ADD CONSTRAINT FK_retenir_id_reponse FOREIGN KEY (id_reponse) REFERENCES reponse(id_reponse);

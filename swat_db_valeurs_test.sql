@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 22 nov. 2017 à 16:10
+-- Généré le :  mer. 22 nov. 2017 à 16:12
 -- Version du serveur :  5.7.19
 -- Version de PHP :  5.6.31
 
@@ -28,7 +28,6 @@ SET time_zone = "+00:00";
 -- Structure de la table `acheteur`
 --
 
-DROP TABLE IF EXISTS `acheteur`;
 CREATE TABLE IF NOT EXISTS `acheteur` (
   `id_acheteur` int(11) NOT NULL AUTO_INCREMENT,
   `nom_acheteur` varchar(25) DEFAULT NULL,
@@ -51,7 +50,6 @@ INSERT INTO `acheteur` (`id_acheteur`, `nom_acheteur`, `prenom_acheteur`) VALUES
 -- Structure de la table `avoir`
 --
 
-DROP TABLE IF EXISTS `avoir`;
 CREATE TABLE IF NOT EXISTS `avoir` (
   `id_droit` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
@@ -65,7 +63,6 @@ CREATE TABLE IF NOT EXISTS `avoir` (
 -- Structure de la table `demande`
 --
 
-DROP TABLE IF EXISTS `demande`;
 CREATE TABLE IF NOT EXISTS `demande` (
   `id_demande` int(11) NOT NULL,
   `code_affaire_demande` varchar(9) DEFAULT NULL,
@@ -100,7 +97,6 @@ INSERT INTO `demande` (`id_demande`, `code_affaire_demande`, `libelle_demande`, 
 -- Structure de la table `developpeur`
 --
 
-DROP TABLE IF EXISTS `developpeur`;
 CREATE TABLE IF NOT EXISTS `developpeur` (
   `id_developpeur` int(11) NOT NULL,
   `nom_developpeur` varchar(25) DEFAULT NULL,
@@ -124,7 +120,6 @@ INSERT INTO `developpeur` (`id_developpeur`, `nom_developpeur`, `prenom_developp
 -- Structure de la table `droit`
 --
 
-DROP TABLE IF EXISTS `droit`;
 CREATE TABLE IF NOT EXISTS `droit` (
   `id_droit` int(11) NOT NULL AUTO_INCREMENT,
   `creer` tinyint(1) DEFAULT NULL,
@@ -152,7 +147,6 @@ INSERT INTO `droit` (`id_droit`, `creer`, `editer`, `supprimer`, `repondre`, `co
 -- Structure de la table `interet`
 --
 
-DROP TABLE IF EXISTS `interet`;
 CREATE TABLE IF NOT EXISTS `interet` (
   `id_interet` int(11) NOT NULL AUTO_INCREMENT,
   `libelle_interet` varchar(25) DEFAULT NULL,
@@ -174,7 +168,6 @@ INSERT INTO `interet` (`id_interet`, `libelle_interet`) VALUES
 -- Structure de la table `interlocuteur_technique`
 --
 
-DROP TABLE IF EXISTS `interlocuteur_technique`;
 CREATE TABLE IF NOT EXISTS `interlocuteur_technique` (
   `id_interloc_technique` int(11) NOT NULL,
   `nom_interloc_technique` varchar(25) DEFAULT NULL,
@@ -197,7 +190,6 @@ INSERT INTO `interlocuteur_technique` (`id_interloc_technique`, `nom_interloc_te
 -- Structure de la table `reponse`
 --
 
-DROP TABLE IF EXISTS `reponse`;
 CREATE TABLE IF NOT EXISTS `reponse` (
   `id_reponse` int(11) NOT NULL,
   `sous_traitant_reponse` tinyint(1) DEFAULT NULL,
@@ -225,7 +217,6 @@ INSERT INTO `reponse` (`id_reponse`, `sous_traitant_reponse`, `nb_jours`, `taux_
 -- Structure de la table `retenir`
 --
 
-DROP TABLE IF EXISTS `retenir`;
 CREATE TABLE IF NOT EXISTS `retenir` (
   `id_reponse` int(11) NOT NULL,
   `id_developpeur` int(11) NOT NULL,
@@ -248,7 +239,6 @@ INSERT INTO `retenir` (`id_reponse`, `id_developpeur`) VALUES
 -- Structure de la table `type_droit`
 --
 
-DROP TABLE IF EXISTS `type_droit`;
 CREATE TABLE IF NOT EXISTS `type_droit` (
   `id_type_droit` int(11) NOT NULL AUTO_INCREMENT,
   `libelle_type_droit` varchar(25) DEFAULT NULL,
@@ -270,7 +260,6 @@ INSERT INTO `type_droit` (`id_type_droit`, `libelle_type_droit`) VALUES
 -- Structure de la table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id_user` int(11) NOT NULL AUTO_INCREMENT,
   `identifiant_user` varchar(25) NOT NULL,

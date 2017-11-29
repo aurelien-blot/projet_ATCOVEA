@@ -1,1 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: yellow;
+}
 
+header{
+    display: flex;
+    width: 100%;
+    background: grey;
+    height: 150px;
+}
+header img{
+    height: 140px;
+}
+
+
+nav{
+    background: aqua;
+    height: 50px;
+    width: 100%;
+    margin-top: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+#page{
+    display: flex;
+}
+aside{
+  
+    width: 150px;
+    height: 800px;
+    background: red;
+}
+
+section{
+    
+    width: 100%;
+    background: white;
+  
+}
+
+.demande {
+    background: green;
+}
+footer {
+    background: orange;
+}

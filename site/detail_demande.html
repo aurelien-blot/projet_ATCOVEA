@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style_detail_demande.css" />
+        <title>Portail SWAT</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/CGI_Logo_color%5B538%5D.png"/>
+            <h1>Portail SWAT</h1>
+            <div id="connexion">
+                <p>
+                    <label for="id_user">Identifiant :</label>
+                    <input type="text" name="id_user">
+                    <br />
+                    <label for="mdp_user">Mot de passe :</label>
+                    <input type="password" name="mdp_user"/>
+                </p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="html/">Accueil</a></li>
+                <li><a href="html/">Ajouter une offre</a></li>
+            </ul>
+        </nav>
+        <div id="page">
+            <aside>
+                <h3>Recherche avancée</h3>
+                <p>
+                    <label for="search_name">Tri par nom ou n° :</label>
+                    <input name="search_name" type="text"><br />
+                    <label for="search_city">Tri par ville :</label>
+                    <input type="text" name="search_city">
+                </p>
+            </aside>
+            
+
+
+
+
+
+
+            <section>
+                <div id="global_detail_demande" class="encadre margin_top">
+                    <h2>Demande n° <span>00000001</span></h2>
+                    <div id="flex2">
+                        <div class="champ_detail_demande">
+                            <label for="enseinge_demande">Enseigne :</label>
+                            <span class="enseinge_demande">COVEA TRANSVERSE</span>
+                        </div>
+                        <div class="champ_detail_demande">
+                            <label for="interet_demande">Intérêt de la demande :</label>
+                            <span class="interet_demande">Intéret</span>
+                        </div>  
+                    </div>
+                    <div id="flex2">
+                       <div class="champ_detail_demande">
+                            <label for="date_debut_demande">Date de début :</label>
+                            <span class="date_debut_demande">JJ/MM/AAAA</span>
+                        </div>
+                        <div class="champ_detail_demande">
+                            <label for="date_fin_demande">Date de fin :</label>
+                            <span class="date_fin_demande">JJ/MM/AAAA</span>
+                        </div>      
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <div id="boutons_detail_demande" class="encadre">
+                    <button class="bouton">Demande</button>
+                    <button class="bouton">Réponse</button>
+                    <button class="bouton">Suivi</button>
+                    <button class="bouton">Retour Client</button>
+                </div>
+                <div id="global_detail_demande" class="encadre">
+                    <div id="demande_detail_demande" class="hidden">
+                        <h3>Détails de la demande</h3>
+                        <div class="champ_detail_demande">
+                            <div><label for="contexte_demande">Contexte de la demande :</label></div>
+                            <div><span class="contexte_demande">contexte_demande</span></div>
+                        </div>
+                        <div class="champ_detail_demande">
+                            <div class="margin_top"><label for="details_prestation_demande">Détails de la prestation :</label></div>
+                            <div><span class="details_prestation_demande">details_prestation_demande</span></div>
+                        </div>
+                        <div id="flex2" class="margin_top">
+                            <div class="champ_detail_demande">
+                            <label for="code_affaire_demande">Code affaire :</label>
+                            <span class="code_affaire_demande">code affaire</span>
+                        </div>
+                        <div class="champ_detail_demande">
+                            <label for="libelle_demande">Libellé :</label>
+                            <span class="libelle_demande">libelle</span>
+                        </div>
+                        </div>
+
+
+<!-- INTERLOCUTEUR TECHNIQUE -->
+                        <div id="sous_detail_demande" class="encadre2 flex2">
+                            <div class="champ_detail_demande">
+                                <label for="nom_interloc_technique">Nom interlocuteur technique:</label>
+                                <span class="nom_interloc_technique">Nom Prénom</span>
+                            </div>
+                            <div class="champ_detail_demande">
+                                <label for="mail_interloc_technique">Mail interlocuteur technique:</label>
+                                <span class="mail_interloc_technique">@</span>
+                            </div>
+                            <div class="champ_detail_demande">
+                                <label for="tel_interloc_technique">Téléphone interlocuteur technique:</label>
+                                <span class="tel_interloc_technique">tel</span>
+                            </div>  
+                        </div>
+
+
+
+<!-- INTERLOCUTEUR ACHAT -->
+                        <div id="sous_detail_demande" class="encadre2 flex2">
+                                <div class="champ_detail_demande">
+                                    <label for="nom_acheteur">Nom acheteur:</label>
+                                    <span class="nom_acheteur">Nom Prénom</span>
+                                </div>
+                                <div class="champ_detail_demande">
+                                    <label for="mail_acheteur">Mail acheteur :</label>
+                                    <span class="mail_acheteur">@</span>
+                                </div>
+                                <div class="champ_detail_demande">
+                                    <label for="tel_acheteur">Téléphone acheteur :</label>
+                                    <span class="tel_acheteur">tel</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                    <div id="reponse_detail_demande" class="hidden encadre">
+                        <h3>Réponse demande</h3>
+                        <div class="champ_detail_demande">
+                            <label for="sous_traitant_reponse">Sous traitant :</label>
+                            <span class="sous_traitant_reponse">oui / non</span>
+                        </div>
+                        <div class="champ_detail_demande">
+                            <label for="nb_jours">Nombre de jours :</label>
+                            <span class="nb_jours">10 jours</span>
+                        </div>
+                        <div class="champ_detail_demande">
+                            <label for="taux_journalier">Taux journalier :</label>
+                            <span class="date_">200</span>
+                        </div>
+                        <div class="champ_detail_demande">
+                            <label for="date_debut">Date de début :</label>
+                            <span class="date_debut">JJ/MM/AAAA</span>
+                        </div>
+                        <div class="champ_detail_demande">
+                            <label for="date_fin">Date de fin :</label>
+                            <span class="date_fin">JJ/MM/AAAA</span>
+                        </div>
+                    </div>
+
+
+
+                    <div id="suivi_demande" class="hidden encadre">
+                        <h3>Suivi demande</h3>
+                        <p>
+                            Suivi de la demande
+                        </p>
+                    </div>
+                    <div id="retour_client_detail_demande" class="hidden encadre">
+                        <h3>Retour Client</h3>
+                        <p>
+                            Retour Client
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>Tous droits réservés</p>
+        </footer>
+        <script></script>
+    </body>
+
+</html>

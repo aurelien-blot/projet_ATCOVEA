@@ -2,16 +2,16 @@
 #        Script MySQL.
 #------------------------------------------------------------
 
-DROP DATABASE IF EXISTS swat_db;
-CREATE DATABASE swat_db CHARACTER SET 'utf8';
-USE swat_db;
+DROP DATABASE IF EXISTS SWAT_db;
+CREATE DATABASE SWAT_db CHARACTER SET 'utf8';
+USE SWAT_db;
 
 #------------------------------------------------------------
-# Table: demande
+# Table: Demande
 #------------------------------------------------------------
 
-CREATE TABLE demande(
-        id_demande                 Int NOT NULL ,
+CREATE TABLE Demande(
+        id_demande                 int (11) Auto_increment  NOT NULL ,
         code_affaire_demande       Varchar (9) ,
         libelle_demande            Varchar (50) ,
         date_debut_demande         Date ,
@@ -28,12 +28,13 @@ CREATE TABLE demande(
 
 
 #------------------------------------------------------------
-# Table: interlocuteur_technique
+# Table: Interlocuteur_technique
 #------------------------------------------------------------
 
-CREATE TABLE interlocuteur_technique(
-        id_interloc_technique   Int NOT NULL ,
+CREATE TABLE Interlocuteur_technique(
+        id_interloc_technique   int (11) Auto_increment  NOT NULL  ,
         nom_interloc_technique  Varchar (25) ,
+        prenom_interloc_technique Varchar (25) ,
         mail_interloc_technique Varchar (100) ,
         tel_interloc_technique  Int ,
         PRIMARY KEY (id_interloc_technique )
@@ -45,7 +46,7 @@ CREATE TABLE interlocuteur_technique(
 #------------------------------------------------------------
 
 CREATE TABLE reponse(
-        id_reponse            Int NOT NULL ,
+        id_reponse            int (11) Auto_increment  NOT NULL ,
         sous_traitant_reponse Bool ,
         nb_jours              Int ,
         taux_journalier       Double ,
@@ -61,7 +62,7 @@ CREATE TABLE reponse(
 #------------------------------------------------------------
 
 CREATE TABLE developpeur(
-        id_developpeur          Int NOT NULL ,
+        id_developpeur          int (11) Auto_increment  NOT NULL  ,
         nom_developpeur         Varchar (25) ,
         prenom_developpeur      Varchar (25) ,
         competences_developpeur Varchar (300) ,
@@ -133,10 +134,10 @@ CREATE TABLE retenir(
         PRIMARY KEY (id_reponse ,id_developpeur )
 )ENGINE=InnoDB;
 
-ALTER TABLE demande ADD CONSTRAINT FK_Demande_id_interloc_technique FOREIGN KEY (id_interloc_technique) REFERENCES interlocuteur_technique(id_interloc_technique);
-ALTER TABLE demande ADD CONSTRAINT FK_Demande_id_interet FOREIGN KEY (id_interet) REFERENCES interet(id_interet);
-ALTER TABLE demande ADD CONSTRAINT FK_Demande_id_acheteur FOREIGN KEY (id_acheteur) REFERENCES acheteur(id_acheteur);
-ALTER TABLE reponse ADD CONSTRAINT FK_reponse_id_demande FOREIGN KEY (id_demande) REFERENCES demande(id_demande);
+ALTER TABLE Demande ADD CONSTRAINT FK_Demande_id_interloc_technique FOREIGN KEY (id_interloc_technique) REFERENCES Interlocuteur_technique(id_interloc_technique);
+ALTER TABLE Demande ADD CONSTRAINT FK_Demande_id_interet FOREIGN KEY (id_interet) REFERENCES interet(id_interet);
+ALTER TABLE Demande ADD CONSTRAINT FK_Demande_id_acheteur FOREIGN KEY (id_acheteur) REFERENCES acheteur(id_acheteur);
+ALTER TABLE reponse ADD CONSTRAINT FK_reponse_id_demande FOREIGN KEY (id_demande) REFERENCES Demande(id_demande);
 ALTER TABLE user ADD CONSTRAINT FK_user_id_droit FOREIGN KEY (id_droit) REFERENCES groupe_droit(id_droit);
 ALTER TABLE retenir ADD CONSTRAINT FK_retenir_id_reponse FOREIGN KEY (id_reponse) REFERENCES reponse(id_reponse);
 ALTER TABLE retenir ADD CONSTRAINT FK_retenir_id_developpeur FOREIGN KEY (id_developpeur) REFERENCES developpeur(id_developpeur);

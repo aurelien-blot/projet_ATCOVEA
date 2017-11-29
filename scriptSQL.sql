@@ -135,6 +135,7 @@ CREATE TABLE acheteur(
         id_acheteur     int (11) Auto_increment  NOT NULL ,
         nom_acheteur    Varchar (25) ,
         prenom_acheteur Varchar (25) ,
+	mail_acheteur	Varchar (100) ,
         PRIMARY KEY (id_acheteur )
 )ENGINE=InnoDB;
 

@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Portail SWAT</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/CGI_Logo_color%5B538%5D.png"/>
+            <h1>Portail SWAT</h1>
+            <div id="connexion">
+                <p>
+                    <label for="id_user">Identifiant :</label>
+                    <input type="text" name="id_user">
+                    <br />
+                    <label for="mdp_user">Mot de passe :</label>
+                    <input type="password" name="mdp_user"/>
+                </p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="html/">Accueil</a></li>
+                <li><a href="html/">Ajouter une offre</a></li>
+            </ul>
+        </nav>
+        <div id="page">
+            <aside>
+                <h3>Recherche avancée</h3>
+                <p>
+                    <label for="search_name">Tri par nom ou n° :</label>
+                    <input name="search_name" type="text"><br />
+                    <label for="search_city">Tri par ville :</label>
+                    <input type="text" name="search_city">
+                </p>
+            </aside>
+            <section>
+                <h2>Offres COVEA</h2>
+                <p><span id="demande_en_cours">Demandes en cours</span> / <span id="demande_en_cours">Demandes traitées</span></p>
+                <p><span id="total_demandes">0</span> demandes</p>
+                <p>Page : 1-2-3....-last</p>
 
+                <div id="exemple1" class="demande">
+                    <h2>Développement d'un suivi d'une assistance technique</h2>
+                    <p>Enseigne : <span>COVEA</span></p>
+                    <p>Statut : <span>non répondue</span></p>
+                    <p>Code Affaire : <span>CAFJ127963</span></p>
+                    <p id="contexte_demande">Dans le cadre de notre évolution, CGI voudrait un outil pour réaliser le suivi des assistances techniques. BLA BLA BLA BLA BLA BLA BLA</p>
+                    <p>Mise en ligne : <span>12/10/2017</span></p>
+                    <p>Dâte de clôture : <span>25/11/2017</span></p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>Tous droits réservés</p>
+        </footer>
+        <script></script>
+    </body>
+
+</html>

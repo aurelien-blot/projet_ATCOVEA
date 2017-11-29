@@ -2,15 +2,15 @@
 #        Script MySQL.
 #------------------------------------------------------------
 
-DROP DATABASE IF EXISTS Vente_en_ligne;
-CREATE DATABASE Vente_en_ligne CHARACTER SET 'utf8';
-USE Vente_en_ligne;
+DROP DATABASE IF EXISTS swat_db;
+CREATE DATABASE swat_db CHARACTER SET 'utf8';
+USE swat_db;
 
 #------------------------------------------------------------
-# Table: Demande
+# Table: demande
 #------------------------------------------------------------
 
-CREATE TABLE Demande(
+CREATE TABLE demande(
         id_demande                 Int NOT NULL ,
         code_affaire_demande       Varchar (9) ,
         libelle_demande            Varchar (50) ,
@@ -28,10 +28,10 @@ CREATE TABLE Demande(
 
 
 #------------------------------------------------------------
-# Table: Interlocuteur_technique
+# Table: interlocuteur_technique
 #------------------------------------------------------------
 
-CREATE TABLE Interlocuteur_technique(
+CREATE TABLE interlocuteur_technique(
         id_interloc_technique   Int NOT NULL ,
         nom_interloc_technique  Varchar (25) ,
         mail_interloc_technique Varchar (100) ,
@@ -133,10 +133,10 @@ CREATE TABLE retenir(
         PRIMARY KEY (id_reponse ,id_developpeur )
 )ENGINE=InnoDB;
 
-ALTER TABLE Demande ADD CONSTRAINT FK_Demande_id_interloc_technique FOREIGN KEY (id_interloc_technique) REFERENCES Interlocuteur_technique(id_interloc_technique);
-ALTER TABLE Demande ADD CONSTRAINT FK_Demande_id_interet FOREIGN KEY (id_interet) REFERENCES interet(id_interet);
-ALTER TABLE Demande ADD CONSTRAINT FK_Demande_id_acheteur FOREIGN KEY (id_acheteur) REFERENCES acheteur(id_acheteur);
-ALTER TABLE reponse ADD CONSTRAINT FK_reponse_id_demande FOREIGN KEY (id_demande) REFERENCES Demande(id_demande);
+ALTER TABLE demande ADD CONSTRAINT FK_Demande_id_interloc_technique FOREIGN KEY (id_interloc_technique) REFERENCES interlocuteur_technique(id_interloc_technique);
+ALTER TABLE demande ADD CONSTRAINT FK_Demande_id_interet FOREIGN KEY (id_interet) REFERENCES interet(id_interet);
+ALTER TABLE demande ADD CONSTRAINT FK_Demande_id_acheteur FOREIGN KEY (id_acheteur) REFERENCES acheteur(id_acheteur);
+ALTER TABLE reponse ADD CONSTRAINT FK_reponse_id_demande FOREIGN KEY (id_demande) REFERENCES demande(id_demande);
 ALTER TABLE user ADD CONSTRAINT FK_user_id_droit FOREIGN KEY (id_droit) REFERENCES groupe_droit(id_droit);
 ALTER TABLE retenir ADD CONSTRAINT FK_retenir_id_reponse FOREIGN KEY (id_reponse) REFERENCES reponse(id_reponse);
 ALTER TABLE retenir ADD CONSTRAINT FK_retenir_id_developpeur FOREIGN KEY (id_developpeur) REFERENCES developpeur(id_developpeur);

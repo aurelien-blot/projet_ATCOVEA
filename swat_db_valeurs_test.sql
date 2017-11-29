@@ -1,5 +1,5 @@
-INSERT INTO `acheteur` (`nom_acheteur`, `prenom_acheteur`) VALUES
-('Do', 'John'),('Wayne', 'John'),('Rambo', 'John'),('Rio', 'Bravo'),('Rale','Alain');
+INSERT INTO `acheteur` (`nom_acheteur`, `prenom_acheteur`,`mail_acheteur`) VALUES
+('Do', 'John','DoJohn@gmail.com'),('Wayne', 'John','WayneJohn@gmail.com'),('Rambo', 'John','RamboJohn@gmail.com'),('Rio', 'Bravo','RioBravo@gmail.com'),('Rale','Alain','RaleAlain@gmail.com');
 
 INSERT INTO `interet` (`libelle_interet`) VALUES
 ('important'),('très important'),('stratégique');

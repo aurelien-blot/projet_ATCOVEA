@@ -2,6 +2,9 @@
 #        Script MySQL.
 #------------------------------------------------------------
 
+DROP DATABASE IF EXISTS Vente_en_ligne;
+CREATE DATABASE Vente_en_ligne CHARACTER SET 'utf8';
+USE Vente_en_ligne;
 
 #------------------------------------------------------------
 # Table: Demande

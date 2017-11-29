@@ -28,9 +28,7 @@
         </nav>
         <div id="page">
             <aside>
-
             </aside>
-
             <section>
                 <div id="global_detail_demande" class="encadre margin_top">
                     <h2>Demande n° <span>00000001</span></h2>
@@ -54,22 +52,18 @@
                             <span class="date_fin_demande">JJ/MM/AAAA</span>
                         </div>      
                     </div>
-
-
-
-
-
-
-
+<!-- BOUTONS -->
                 </div>
                 <div id="boutons_detail_demande" class="encadre">
-                    <button class="bouton">Demande</button>
-                    <button class="bouton">Réponse</button>
-                    <button class="bouton">Suivi</button>
-                    <button class="bouton">Retour Client</button>
+                    <button id="bouton1" class="bouton">Demande</button>
+                    <button id="bouton2" class="bouton">Réponse</button>
+                    <button id="bouton3" class="bouton">Suivi</button>
+                    <button id="bouton4" class="bouton">Retour Client</button>
                 </div>
-                <div id="global_detail_demande" class="encadre">
-                    <div id="demande_detail_demande" class="hidden">
+<!-- BLOC PRINCIPAL -->
+                <div id="global_detail_demande">
+<!-- DETAILS DEMANDE -->
+                    <div id="demande_detail_demande" class="encadre">
                         <h3>Détails de la demande</h3>
                         <div class="champ_detail_demande">
                             <div><label for="contexte_demande">Contexte de la demande :</label></div>
@@ -89,46 +83,49 @@
                             <span class="libelle_demande">libelle</span>
                         </div>
                         </div>
-
-
 <!-- INTERLOCUTEUR TECHNIQUE -->
-                        <div id="sous_detail_demande" class="encadre2 flex2">
-                            <p>Interlocuteur Technique :</p>
-                            <div class="champ_detail_demande">
-                                 
-                                <label for="nom_interloc_technique">Nom :</label>
-                                <span class="nom_interloc_technique">Nom Prénom</span>
+                        <div id="sous_detail_demande" class="encadre2">
+                            <div class="inline centre">
+                                <p class="gras">Interlocuteur Technique :</p>
                             </div>
-                            <div class="champ_detail_demande">
-                                <label for="mail_interloc_technique">Mail :</label>
-                                <span class="mail_interloc_technique">@</span>
-                            </div>
-                            <div class="champ_detail_demande">
-                                <label for="tel_interloc_technique">Téléphone :</label>
-                                <span class="tel_interloc_technique">tel</span>
-                            </div>  
-                        </div>
-
-
-
-<!-- INTERLOCUTEUR ACHAT -->
-                        <div id="sous_detail_demande" class="encadre2 flex2">
+                                <div class="flex2">
+                                <div class="champ_detail_demande">  
+                                    <label for="nom_interloc_technique">Nom :</label>
+                                    <span class="nom_interloc_technique">Nom Prénom</span>
+                                </div>
                                 <div class="champ_detail_demande">
-                                    <label for="nom_acheteur">Nom acheteur:</label>
+                                    <label for="mail_interloc_technique">Mail :</label>
+                                    <span class="mail_interloc_technique">@</span>
+                                </div>
+                                <div class="champ_detail_demande">
+                                    <label for="tel_interloc_technique">Téléphone :</label>
+                                    <span class="tel_interloc_technique">tel</span>
+                                </div>
+                            </div>
+                        </div>
+<!-- INTERLOCUTEUR ACHAT -->
+                        <div id="sous_detail_demande" class="encadre2">
+                            <div class="inline centre">
+                                <p class="gras">Interlocuteur Achat :</p>
+                            </div>
+                            <div class="flex2">
+                                <div class="champ_detail_demande">
+                                    <label for="nom_acheteur">Nom :</label>
                                     <span class="nom_acheteur">Nom Prénom</span>
                                 </div>
                                 <div class="champ_detail_demande">
-                                    <label for="mail_acheteur">Mail acheteur :</label>
+                                    <label for="mail_acheteur">Mail :</label>
                                     <span class="mail_acheteur">@</span>
                                 </div>
                                 <div class="champ_detail_demande">
-                                    <label for="tel_acheteur">Téléphone acheteur :</label>
+                                    <label for="tel_acheteur">Téléphone :</label>
                                     <span class="tel_acheteur">tel</span>
                                 </div>
+                            </div>
                         </div>
-                    
+<!-- REPONSE DEMANDE -->
                     </div>
-                    <div id="reponse_detail_demande" class="hidden encadre">
+                    <div id="reponse_detail_demande" class="encadre">
                         <h3>Réponse demande</h3>
                         <div class="champ_detail_demande">
                             <label for="sous_traitant_reponse">Sous traitant :</label>
@@ -151,16 +148,15 @@
                             <span class="date_fin">JJ/MM/AAAA</span>
                         </div>
                     </div>
-
-
-
-                    <div id="suivi_demande" class="hidden encadre">
+<!-- SUIVI DEMANDE -->
+                    <div id="suivi_detail_demande" class="encadre">
                         <h3>Suivi demande</h3>
                         <p>
                             Suivi de la demande
                         </p>
                     </div>
-                    <div id="retour_client_detail_demande" class="hidden encadre">
+<!-- RETOUR CLIENT -->
+                    <div id="retour_client_detail_demande" class="encadre">
                         <h3>Retour Client</h3>
                         <p>
                             Retour Client
@@ -172,9 +168,8 @@
         <footer>
             <p>Tous droits réservés</p>
         </footer>
-        <script></script>
+        <script   src="https://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
+        <script src="../js/detail_demande.js"></script> 
     </body>
-
 </html>
-
-

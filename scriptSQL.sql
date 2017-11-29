@@ -22,11 +22,12 @@ CREATE TABLE demande(
         date_fin_demande           Date ,
         contexte_demande           Varchar (150) ,
         details_prestation_demande Varchar (300) ,
+        statut_demande             Varchar (25) ,
         zone_geographique          Varchar (25) ,
         id_interloc_technique      Int NOT NULL ,
         id_interet                 Int NOT NULL ,
         id_acheteur                Int NOT NULL ,
-        id_statut		   Int NOT NULL ,
+        id_statut				   Int NOT NULL ,
         PRIMARY KEY (id_demande )
 )ENGINE=InnoDB;
 

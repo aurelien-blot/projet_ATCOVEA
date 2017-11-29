@@ -10,19 +10,20 @@
             <img src="img/CGI_Logo_color%5B538%5D.png"/>
             <h1>Portail SWAT</h1>
             <div id="connexion">
-                <p>
-                    <label for="id_user">Identifiant :</label>
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="id_user">Identifiant :</label>
                     <input type="text" name="id_user">
-                    <br />
-                    <label for="mdp_user">Mot de passe :</label>
+                </div>
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="mdp_user">Mot de passe :</label>
                     <input type="password" name="mdp_user"/>
-                </p>
+                </div>
             </div>
         </header>
         <nav>
             <ul>
-                <li><a href="html/">Accueil</a></li>
-                <li><a href="html/">Ajouter une offre</a></li>
+                <li><a href="html/" class="lien_menu"><div >Accueil</div></a></li>
+                <li><a href="html/" class="lien_menu"><div >Ajouter une offre</div></a></li>
             </ul>
         </nav>
         <div id="page">
@@ -37,19 +38,42 @@
             </aside>
             <section>
                 <h2>Offres COVEA</h2>
-                <p><span id="demande_en_cours">Demandes en cours</span> / <span id="demande_en_cours">Demandes traitées</span></p>
-                <p><span id="total_demandes">0</span> demandes</p>
-                <p>Page : 1-2-3....-last</p>
+                <p id="demande_choix"><span>Toutes les demandes</span> / <span id="demande_en_cours">Demandes en cours</span> / <span id="demande_en_cours">Demandes traitées</span></p>
+                <p id="total_demande">Votre requête a retourné <span id="nbre_total_demandes">0</span> demandes.</p>
+                <p class="pagination">Page : 1-2-3....-last</p>
 
-                <div id="exemple1" class="demande">
-                    <h2>Développement d'un suivi d'une assistance technique</h2>
-                    <p>Enseigne : <span>COVEA</span></p>
-                    <p>Statut : <span>non répondue</span></p>
-                    <p>Code Affaire : <span>CAFJ127963</span></p>
-                    <p id="contexte_demande">Dans le cadre de notre évolution, CGI voudrait un outil pour réaliser le suivi des assistances techniques. BLA BLA BLA BLA BLA BLA BLA</p>
-                    <p>Mise en ligne : <span>12/10/2017</span></p>
-                    <p>Dâte de clôture : <span>25/11/2017</span></p>
-                </div>
+                <a href="html/" class="lien_detail">
+                    <div id="exemple1" class="demande">
+                        <h2>Développement d'un suivi d'une assistance technique</h2>
+                        <div class="first_line_demande">
+                            <p><span class="
+                            gras">Enseigne :</span> <span>COVEA</span></p>
+                            <p><span class="gras">Statut : </span><span>non répondue</span></p>
+                        </div>
+                        <p><span class="gras">Code Affaire :</span> <span>CAFJ127963</span></p>
+                        <p id="contexte_demande">Dans le cadre de notre évolution, CGI voudrait un outil pour réaliser le suivi des assistances techniques. BLA BLA BLA BLA BLA BLA BLA</p>
+                        <div class="last_line_demande">
+                            <p>Mise en ligne : <span>12/10/2017</span></p>
+                            <p>Dâte de clôture : <span>25/11/2017</span></p></div>
+                    </div>
+                </a>
+                <a href="html/" class="lien_detail">
+                    <div id="exemple2" class="demande">
+                        <h2>Développement d'un suivi d'une assistance technique</h2>
+                        <div class="first_line_demande">
+                            <p><span class="
+                            gras">Enseigne :</span> <span>COVEA</span></p>
+                            <p><span class="gras">Statut : </span><span>non répondue</span></p>
+                        </div>
+                        <p><span class="gras">Code Affaire :</span> <span>CAFJ127963</span></p>
+                        <p id="contexte_demande">Dans le cadre de notre évolution, CGI voudrait un outil pour réaliser le suivi des assistances techniques. BLA BLA BLA BLA BLA BLA BLA</p>
+                        <div class="last_line_demande">
+                            <p>Mise en ligne : <span>12/10/2017</span></p>
+                            <p>Dâte de clôture : <span>25/11/2017</span></p></div>
+                    </div>
+                </a>
+                
+                <p class="pagination">Page : 1-2-3....-last</p>
             </section>
         </div>
         <footer>

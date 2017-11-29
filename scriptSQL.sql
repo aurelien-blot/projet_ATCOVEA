@@ -16,6 +16,7 @@ USE swat_db;
 
 CREATE TABLE demande(
         id_demande                 Int (11) Auto_increment  NOT NULL ,
+	intitule_demande           Varchar (30) ,
         code_affaire_demande       Varchar (9) ,
         libelle_demande            Varchar (50) ,
         date_debut_demande         Date ,

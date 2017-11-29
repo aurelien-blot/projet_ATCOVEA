@@ -2,25 +2,39 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background: yellow;
+    background: #f9f9f9;
 }
 
 header{
     display: flex;
+    justify-content: space-between;
+    margin: auto;
     width: 100%;
-    background: grey;
+   /* background: #faf9f9;*/
+    background-image: linear-gradient(to right, #ffffff, #efefef);
     height: 150px;
+    border-bottom: 1px white solid;
 }
 header img{
-    height: 140px;
+    height: 150px;
+    float: left;
+}
+header h1{
+    text-align: center;
+}
+#connexion {
+    padding-right: 10px;
+    font-size: 0.8em;
 }
 
-
 nav{
-    background: aqua;
+    background: #e2e2e2;
     height: 50px;
-    width: 100%;
+    
     margin-top: 0;
+    padding: 20px 5px 0px 20px;
+    border-bottom: white solid 1px;
+
 }
 nav ul{
     display: flex;
@@ -34,24 +48,35 @@ nav a{
 
 #page{
     display: flex;
+    
 }
 aside{
-  
-    width: 150px;
-    height: 800px;
-    background: red;
+    background-image: linear-gradient(to right, #ffffff, #dcdcd9);
+    width: 200px;
+    box-shadow: 5px 4px 10px grey;
+    padding: 10px;
+    /*border-right: 2px grey solid;*/
+    
 }
 
 section{
-    
+    margin: 0px 20px 0px 20px;
     width: 100%;
-    background: white;
+    text-align: center;
   
 }
 
 .demande {
-    background: green;
+    background: white;
+    border : solid 1px black;
+    margin: 0px 5px 10px 5px;
+    border-radius: 20px;
 }
 footer {
-    background: orange;
+    background-image: linear-gradient(to right, #ffffff, #dcdcd9);
+    text-align: right;
+    padding-right: 50px;
+}
+h1 {
+    
 }

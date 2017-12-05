@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style_sam.css" />
+        <title>Portail SWAT</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/CGI_Logo_color%5B538%5D.png"/>
+            <h1>Portail SWAT</h1>
+            <div id="connexion">
+                <p>
+                    <label for="id_user">Identifiant :</label>
+                    <input type="text" name="id_user">
+                    <br />
+                    <label for="mdp_user">Mot de passe :</label>
+                    <input type="password" name="mdp_user"/>
+                </p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="html/">Ajouter une offre</a></li>
+            </ul>
+        </nav>
+        <div id="page">
+            <aside>
+               
+            </aside>
+            <section>
+                <h2>Création d'une demande</h2>
+                <p></p>
+
+                <div id="ajout_demande2" >
+                    <form id="ajout_demande">
+                        <div class="ajout_demande">
+                            <label>Intitulé de la demande</label>
+                            <input class="input_ajout_demande" type="text" name="intitule_demande" maxlength="30"/>
+                        </div>
+                        <div class="ajout_demande">
+                            <label>Contexte de la demande</label>
+                            <textarea class="input_ajout_demande" maxlength=150 rows="3" cols="75" ></textarea>
+                        </div>
+                        <div class="ajout_demande">
+                            <label>Description de la mission</label>
+                            <textarea class="input_ajout_demande" maxlength=300 rows="6" cols="75"></textarea>
+                        </div>
+                        <div class="ajout_date_demande">
+                            <label>Date de début d'appel d'offre</label>
+                            <input  type="Date" name=""/>
+                        </div>
+                        <div class="ajout_date_demande">
+                            <label>Date de fin d'appel d'offre</label>
+                            <input  type="Date" name=""/>
+                        </div>
+                        <div class="ajout_demande">
+                            <label >Intérêt pour CGI de répondre</label> 
+                            <select class="input_ajout_demande" id='liste_interet'>
+                                <option ></option>
+                                <option ></option>
+                                <option ></option>
+                            </select>   
+                        </div>
+                        <div class="ajout_demande">
+                            <label>Code affaire</label>
+                            <input class="input_ajout_demande" type="text" name="" maxlength="9"/>
+                            <label>Libellé</label>
+                            <textarea class="input_ajout_demande" maxlength=50 rows="1" cols="50" ></textarea>
+                        </div>
+
+                    </form>
+                    
+                    <form>
+                        <div>
+                            <p class="ajout_interloc_achat_demande">Interlocuteur achat</p>
+                            <div class="ajout_interloc">
+                                <div class="ajout_interloc_demande">
+                                    <label>Nom</label>
+                                    <input  type="text" name="ajout_nom_interloc_achat" maxlength="25" size="25" />
+                                </div>
+                                <div class="ajout_interloc_demande">
+                                    <label>Prénom</label>
+                                    <input type="text" name="ajout_prenom_interloc_achat" maxlength="25"/ size="25">
+                                </div>
+                                <div class="ajout_demande">
+                                    <label>Email</label>
+                                    <input class="input_ajout_demande" type="text" name="ajout_email_interloc_achat" maxlength="100" size="50" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <form>
+                        <div >
+                            <p class="ajout_interloc_achat_demande">Interlocuteur technique</p>
+                            <div class="ajout_interloc">
+                                <div>
+                                    <div class="ajout_interloc_demande">
+                                        <label>Nom</label>
+                                        <input type="text" name="ajout_nom_interloc_tech" maxlength="25" size="25"/>
+                                    </div>
+                                    <div class="ajout_interloc_demande">
+                                        <label>Prénom</label>
+                                        <input type="text" name="ajout_prenom_interloc_tech" maxlength="25" size="25"/>
+                                    </div>
+                                </div>
+                                
+                                    <div class="ajout_demande">
+                                        <label >Email</label>
+                                        <input class="input_ajout_demande" type="text" name="ajout_email_interloc_tech" maxlength="100" size="50" />
+                                    </div>
+                                    <div class="ajout_demande">
+                                        <label>Téléphone</label>
+                                        <input class="input_ajout_demande" type="text" name="ajout_tel_interloc_tech" maxlength="20" size="20" />
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </form>
+                    <button id="button_envoyer" type="submit">Envoyer</button>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>Tous droits réservés</p>
+        </footer>
+        <script></script>
+    </body>
+
+</html>

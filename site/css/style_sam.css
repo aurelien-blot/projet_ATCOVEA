@@ -1,0 +1,54 @@
+h2 {
+    text-align: center;
+}
+#ajout_demande2 {
+    background: #e2e2e2;
+    margin: 10px 20px 10px 20px;
+    border : solid 1px black;
+    margin: 0px auto 10px auto;
+    border-radius: 20px;
+    width: 70%;
+}
+.ajout_demande {
+    margin: 10px 20px 10px 20px;
+    }
+
+.ajout_date_demande {
+    margin: 10px 170px 10px 20px;
+    float: left;
+
+
+}
+
+.ajout_date_demande label{
+    display: block;
+}
+
+.ajout_interloc_demande {
+    margin: 10px 170px 10px 20px;
+    float: left;
+}
+
+.ajout_interloc_demande label{
+    display: block;
+}
+
+
+
+#button_envoyer {
+    margin : 0px 0px 30px 30px;
+}
+
+.ajout_interloc {
+    margin: 0px 10px 50px 10px;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+.input_ajout_demande {
+    display: block;
+}
+
+.ajout_interloc_achat_demande {
+    margin: 40px 20px 5px 20px;
+    }

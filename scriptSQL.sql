@@ -105,6 +105,7 @@ CREATE TABLE user(
         id_user          Int (11) Auto_increment  NOT NULL ,
         identifiant_user Varchar (25) NOT NULL ,
         password_user    Varchar (25) ,
+	token       	 Varchar (60),
         id_droit         Int NOT NULL ,
         PRIMARY KEY (id_user ) ,
         UNIQUE (identifiant_user )

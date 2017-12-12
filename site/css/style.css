@@ -236,8 +236,6 @@ font-weight: bold;
 .ajout_date_demande {
     margin: 10px 170px 10px 20px;
     float: left;
-
-
 }
 
 .ajout_date_demande label{
@@ -252,9 +250,6 @@ font-weight: bold;
 .ajout_interloc_demande label{
     display: block;
 }
-
-
-
 
 #button_envoyer {
     margin : auto;
@@ -274,4 +269,13 @@ font-weight: bold;
 .ajout_interloc_achat_demande {
     margin: 40px 20px 5px 20px;
     }
-*/
+
+
+/* AJOUT D UNE REPONSE*/
+
+.ajout_reponse{
+    display: flex;
+    flex-direction: column;
+    margin: 10px,auto,10px,auto;
+}
+

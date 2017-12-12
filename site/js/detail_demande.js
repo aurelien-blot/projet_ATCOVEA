@@ -44,12 +44,3 @@ $('#bouton4').on('click', function(){
 // if (retour) === 1 {
 // $('#bouton4').show();
 // 	};
-
-
-
-
-// affichage du bouton modifier uniquement si une réponse a été créée  A MODIFIER AVEC CONDITION BDD
-
-// if (reponse) === 1 {
-// $('#bouton_demande_modifier').show();
-// 	};

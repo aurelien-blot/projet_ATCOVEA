@@ -229,14 +229,6 @@ font-weight: bold;
 /* PAGE AJOUT DEMANDE*/
 
 
-#ajout_demande2 {
-    background: #e2e2e2;
-    margin: 10px 20px 10px 20px;
-    border : solid 1px black;
-    margin: 0px auto 10px auto;
-    border-radius: 20px;
-    width: 70%;
-}
 .ajout_demande {
     margin: 10px 20px 10px 20px;
     }
@@ -265,7 +257,7 @@ font-weight: bold;
 
 
 #button_envoyer {
-    margin : 0px 0px 30px 30px;
+    margin : auto;
 }
 
 .ajout_interloc {
@@ -276,8 +268,10 @@ font-weight: bold;
 
 .input_ajout_demande {
     display: block;
+    width: 100%;
 }
 
 .ajout_interloc_achat_demande {
     margin: 40px 20px 5px 20px;
     }
+*/

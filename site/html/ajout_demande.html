@@ -2,132 +2,132 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/style_sam.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <title>Portail SWAT</title>
     </head>
     <body>
         <header>
-            <img src="img/CGI_Logo_color%5B538%5D.png"/>
+            <img src="../img/CGI_Logo_color%5B538%5D.png"/>
             <h1>Portail SWAT</h1>
             <div id="connexion">
-                <p>
-                    <label for="id_user">Identifiant :</label>
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="id_user">Identifiant :</label>
                     <input type="text" name="id_user">
-                    <br />
-                    <label for="mdp_user">Mot de passe :</label>
+                </div>
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="mdp_user">Mot de passe :</label>
                     <input type="password" name="mdp_user"/>
-                </p>
+                </div>
             </div>
         </header>
         <nav>
             <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="html/">Ajouter une offre</a></li>
+                <li><a href="../index.html" class="lien_menu"><div >Accueil</div></a></li>
+                <li><a href="ajout_demande.html" class="lien_menu"><div >Ajouter une offre</div></a></li>
             </ul>
         </nav>
         <div id="page">
             <aside>
-               
             </aside>
             <section>
                 <h2>Création d'une demande</h2>
                 <p></p>
 
-                <div id="ajout_demande2" >
+                <div class="encadre">
                     <form id="ajout_demande">
                         <div class="ajout_demande">
-                            <label>Intitulé de la demande</label>
+                            <label for="intitule_demande">Intitulé de la demande</label>
                             <input class="input_ajout_demande" type="text" name="intitule_demande" maxlength="30"/>
                         </div>
                         <div class="ajout_demande">
-                            <label>Contexte de la demande</label>
-                            <textarea class="input_ajout_demande" maxlength=150 rows="3" cols="75" ></textarea>
+                            <label for="contexte_demande">Contexte de la demande</label>
+                            <textarea class="input_ajout_demande" name="contexte_demande" maxlength=150 rows="3" cols="75" ></textarea>
                         </div>
                         <div class="ajout_demande">
-                            <label>Description de la mission</label>
-                            <textarea class="input_ajout_demande" maxlength=300 rows="6" cols="75"></textarea>
+                            <label for="description_mission">Description de la mission</label>
+                            <textarea class="input_ajout_demande" name="description_mission" maxlength=300 rows="6" cols="75"></textarea>
                         </div>
                         <div class="ajout_date_demande">
-                            <label>Date de début d'appel d'offre</label>
-                            <input  type="Date" name=""/>
+                            <label for="date_debut_demande">Date de début d'appel d'offre</label>
+                            <input  type="Date" name="date_debut_demande"/>
                         </div>
                         <div class="ajout_date_demande">
-                            <label>Date de fin d'appel d'offre</label>
-                            <input  type="Date" name=""/>
+                            <label for="date_fin_demande">Date de fin d'appel d'offre</label>
+                            <input  type="Date" name="date_fin_demande"/>
                         </div>
                         <div class="ajout_demande">
                             <label >Intérêt pour CGI de répondre</label> 
-                            <select class="input_ajout_demande" id='liste_interet'>
-                                <option ></option>
-                                <option ></option>
-                                <option ></option>
+                            <select id="retenue_cgi" >
+                                <option value="nonRetenue">Non retenue</option>
+                                <option value="retenue">retenue</option>
+                                <option value="autreValue">autre value</option>
                             </select>   
                         </div>
                         <div class="ajout_demande">
-                            <label>Code affaire</label>
-                            <input class="input_ajout_demande" type="text" name="" maxlength="9"/>
-                            <label>Libellé</label>
-                            <textarea class="input_ajout_demande" maxlength=50 rows="1" cols="50" ></textarea>
+                            <label for="code_affaire">Code affaire</label>
+                            <input class="input_ajout_demande" type="text" name="code_affaire" maxlength="9"/>
+                            <label for="libelle_demande">Libellé</label>
+                            <textarea class="input_ajout_demande" name="libelle_demande" maxlength=50 rows="1" cols="50" ></textarea>
                         </div>
 
-                    </form>
-                    
-                    <form>
                         <div>
                             <p class="ajout_interloc_achat_demande">Interlocuteur achat</p>
                             <div class="ajout_interloc">
                                 <div class="ajout_interloc_demande">
-                                    <label>Nom</label>
+                                    <label for="ajout_nom_interloc_achat">Nom</label>
                                     <input  type="text" name="ajout_nom_interloc_achat" maxlength="25" size="25" />
                                 </div>
                                 <div class="ajout_interloc_demande">
-                                    <label>Prénom</label>
+                                    <label for="ajout_prenom_interloc_achat">Prénom</label>
                                     <input type="text" name="ajout_prenom_interloc_achat" maxlength="25"/ size="25">
                                 </div>
                                 <div class="ajout_demande">
-                                    <label>Email</label>
+                                    <label for="ajout_email_interloc_achat">Email</label>
                                     <input class="input_ajout_demande" type="text" name="ajout_email_interloc_achat" maxlength="100" size="50" />
                                 </div>
                             </div>
                         </div>
-                    </form>
-                    
-                    <form>
+
                         <div >
                             <p class="ajout_interloc_achat_demande">Interlocuteur technique</p>
                             <div class="ajout_interloc">
                                 <div>
                                     <div class="ajout_interloc_demande">
-                                        <label>Nom</label>
+                                        <label for="ajout_nom_interloc_tech">Nom</label>
                                         <input type="text" name="ajout_nom_interloc_tech" maxlength="25" size="25"/>
                                     </div>
                                     <div class="ajout_interloc_demande">
-                                        <label>Prénom</label>
+                                        <label for="ajout_prenom_interloc_tech">Prénom</label>
                                         <input type="text" name="ajout_prenom_interloc_tech" maxlength="25" size="25"/>
                                     </div>
                                 </div>
                                 
                                     <div class="ajout_demande">
-                                        <label >Email</label>
+                                        <label for="ajout_email_interloc_tech">Email</label>
                                         <input class="input_ajout_demande" type="text" name="ajout_email_interloc_tech" maxlength="100" size="50" />
                                     </div>
                                     <div class="ajout_demande">
-                                        <label>Téléphone</label>
+                                        <label for="ajout_tel_interloc_tech">Téléphone</label>
                                         <input class="input_ajout_demande" type="text" name="ajout_tel_interloc_tech" maxlength="20" size="20" />
                                     </div>
                                 
                             </div>
                         </div>
+
+                        <div id="button_envoyer"> 
+                        <input type="submit" value="Envoyer" name="button_envoyer">
+                        </div>
+
                     </form>
-                    <button id="button_envoyer" type="submit">Envoyer</button>
+                   
                 </div>
             </section>
         </div>
         <footer>
             <p>Tous droits réservés</p>
         </footer>
-        <script></script>
+        <script   src="https://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
+        <script src="../js/detail_demande.js"></script>
     </body>
-
 </html>

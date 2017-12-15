@@ -1,11 +1,11 @@
 $.ajax({
- 	method: "GET",
-    url:  "https://api-adresse.data.gouv.fr/search/?q=",
-    data: { },
-    success : function(mydata) {
-        console.log(mydata);
-		/*$.each(mydata.data, function(i, obj) {
-		      console.log(obj);
-		});*/
-    }
+	type: "GET",
+	url : "http://192.168.1.20:8080/ATCOVEA_RESTful/webresources/epsi.lemans.demande",
+	data : "",
+	headers : {
+		accept: "application/json"
+	},
+	success : function( mydata ) {
+		//alert ("j'ai reçu "+ mydata);
+	}
 });

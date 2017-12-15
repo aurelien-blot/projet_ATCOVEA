@@ -37,37 +37,39 @@
                     <form id="ajout_demande">
                         <div class="ajout_reponse">
 
+                            <div id="champDates">
+                                <label for="dateDebutPresta">Début de prestation :</label>
+                                <input  type="date" name="dateDebutPresta" class="champMoyen"/>
 
-                            <label for="dateDebutPresta">Début de prestation</label>
-                            <input  type="date" name="dateDebutPresta" />
-
-                            <label for="dateFinPresta">Fin de prestation</label>
-                            <input  type="date" name="dateFinPresta"/>
-
+                                <label for="dateFinPresta">Fin de prestation :</label>
+                                <input  type="date" name="dateFinPresta" class="champMoyen"/>
+                            </div>
                             <label for="profilDemandePresta">Profil demandé :</label>
                             <textarea type="text" name="profilPresta"></textarea>
 
                             <label for="nbreJoursDemandePresta">Nbre de jours demandés:</label>
-                            <input type="text" name="nbreJoursDemandePresta"/>
+                            <input type="text" name="nbreJoursDemandePresta" class="champPetit"/>
                             <br />
                             <label for="profilPropose">Profil proposé :</label>
-                            <input type="text" name="profilPropose" />
+                            <textarea type="text" name="profilPropose"></textarea>
 
 
                             <label for="nbreJoursProposePresta">Nbre de jours proposés:</label>
-                            <input type="text" name="nbreJoursProposePresta"/>
+                            <input type="text" name="nbreJoursProposePresta" class="champPetit"/>
 
                             <label for="tjm">TJM (HT)</label>
-                            <input name="tjm" type="text"/>
+                            <input name="tjm" type="text" class="champPetit"/>
 
                             <label for="commentaires">Commentaire (Remise,...)</label>
                             <textarea name="commentaires"></textarea>
-                            <select>
+                            <label for="origineProfil">Origine du profil :</label>
+                            <select name="origineProfil">
                                 <option value="salarie">Salarié SCII</option>
                                 <option value="sousTraitant">Sous-traitant</option>
                             </select>
+                            <input id="boutonAjoutRep" type="submit" value="Ajouter la réponse" />
                         </div>
-                        <input id="boutonAjoutRep" type="submit" value="Ajouter la réponse" />
+
 
 
                     </form>

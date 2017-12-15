@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <title>Portail SWAT</title>
+    </head>
+    <body>
+        <header>
+            <img src="../img/CGI_Logo_color%5B538%5D.png"/>
+            <h1>Portail SWAT</h1>
+            <div id="connexion">
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="id_user">Identifiant :</label>
+                    <input type="text" name="id_user">
+                </div>
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="mdp_user">Mot de passe :</label>
+                    <input type="password" name="mdp_user"/>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="lien_menu"><div >Accueil</div></a></li>
+                <li><a href="ajout_demande.html" class="lien_menu"><div >Ajouter une offre</div></a></li>
+            </ul>
+        </nav>
+        <div id="page">
+            <aside>
+            </aside>
+            <section>
+                <h2>Création d'une réponse</h2>
+                <p></p>
+
+                <div class="encadre">
+                    <form id="ajout_demande">
+                        <div class="ajout_demande">
+                            <label for="code_affaire">Code affaire</label>
+                            <input class="input_ajout_demande" type="text" name="code_affaire" maxlength="9" size="20" />
+                        </div>
+                        <div class="ajout_date_demande">
+                            <label for="date_debut_demande">Date de début d'appel d'offre</label>
+                            <input  type="Date" name="date_debut_demande"/>
+                        </div>
+                        <div class="ajout_date_demande">
+                            <label for="date_fin_demande">Date de fin d'appel d'offre</label>
+                            <input  type="Date" name="date_fin_demande" />
+                        </div>
+
+                        <div>
+                            <p class="ajout_interloc_achat_demande">Profil du développeur de la solution</p>
+                            <div class="ajout_interloc">
+                                <div class="ajout_interloc_demande">
+                                    <label for="ajout_nom_interloc_achat">Nom</label>
+                                    <input  type="text" name="ajout_nom_interloc_achat" maxlength="25" size="25" />
+                                </div>
+                                <div class="ajout_interloc_demande">
+                                    <label for="ajout_prenom_interloc_achat">Prénom</label>
+                                    <input type="text" name="ajout_prenom_interloc_achat" maxlength="25" size="25">
+                                </div>
+                                <div class="ajout_demande">
+                                    <label for="ajout_email_interloc_achat">Email</label>
+                                    <input class="input_ajout_demande" type="text" name="ajout_email_interloc_achat" maxlength="100" size="50" />
+                                </div>
+                                <div>
+                                    <label for="competences_dev">Compétences</label>
+                                    <input type="text" name="competences_dev" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="ajout_interloc_achat_demande">Interlocuteur technique CGI</p>
+                            <div class="ajout_interloc">
+                                <div class="ajout_interloc_demande">
+                                    <label for="ajout_nom_interloc_achat">Nom</label>
+                                    <input  type="text" name="ajout_nom_interloc_achat" maxlength="25" size="25" />
+                                </div>
+                                <div class="ajout_interloc_demande">
+                                    <label for="ajout_prenom_interloc_achat">Prénom</label>
+                                    <input type="text" name="ajout_prenom_interloc_achat" maxlength="25"/ size="25">
+                                </div>
+                                <div class="ajout_demande">
+                                    <label for="ajout_email_interloc_achat">Email</label>
+                                    <input class="input_ajout_demande" type="text" name="ajout_email_interloc_achat" maxlength="100" size="50" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="button_envoyer"> 
+                        <input type="submit" value="Envoyer" name="button_envoyer">
+                        </div>
+
+                    </form>
+                   
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>Tous droits réservés</p>
+        </footer>
+        <script   src="https://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
+        <script src="../js/detail_demande.js"></script>
+    </body>
+</html>

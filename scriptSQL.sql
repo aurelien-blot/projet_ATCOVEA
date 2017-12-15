@@ -94,6 +94,7 @@ CREATE TABLE developpeur(
         nom_developpeur         Varchar (25) ,
         prenom_developpeur      Varchar (25) ,
         competences_developpeur Varchar (300) ,
+        mail_developpeur        Varchar (100) ,
         cv                      Varchar (100) ,
         PRIMARY KEY (id_developpeur )
 )ENGINE=InnoDB;

@@ -2,39 +2,38 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/style_sam.css" />
-        <title>Portail SWAT</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <title>PORTAIL SWAT</title>
     </head>
     <body>
         <header>
-            <img src="img/CGI_Logo_color%5B538%5D.png"/>
-            <h1>Portail SWAT</h1>
+            <img src="../img/CGI_Logo_color%5B538%5D.png"/>
+            <h1>PORTAIL SWAT</h1>
             <div id="connexion">
-                <p>
-                    <label for="id_user">Identifiant :</label>
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="id_user">Identifiant :</label>
                     <input type="text" name="id_user">
-                    <br />
-                    <label for="mdp_user">Mot de passe :</label>
+                </div>
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="mdp_user">Mot de passe :</label>
                     <input type="password" name="mdp_user"/>
-                </p>
+                </div>
             </div>
         </header>
         <nav>
             <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="html/">Ajouter une offre</a></li>
+                <li><a href="../index.html" class="lien_menu"><div >Accueil</div></a></li>
+                <li><a href="ajout_demande.html" class="lien_menu"><div >Ajouter une offre</div></a></li>
             </ul>
         </nav>
         <div id="page">
             <aside>
-               
             </aside>
             <section>
                 <h2>Création d'une demande</h2>
                 <p></p>
 
-                <div id="ajout_demande2" >
+                <div class="encadre">
                     <form id="ajout_demande">
                         <div class="ajout_demande">
                             <label>Intitulé de la demande</label>
@@ -59,7 +58,7 @@
                         <div class="ajout_demande">
                             <label >Intérêt pour CGI de répondre</label> 
                             <select class="input_ajout_demande" id='liste_interet'>
-                                <option ></option>
+                                <option value="nonRetenue">Non retenue</option>
                                 <option ></option>
                                 <option ></option>
                             </select>   
@@ -127,7 +126,8 @@
         <footer>
             <p>Tous droits réservés</p>
         </footer>
-        <script></script>
+        <script   src="https://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
+        <script src="../js/detail_demande.js"></script>
     </body>
-
 </html>

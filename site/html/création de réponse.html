@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <title>PORTAIL SWAT</title>
+    </head>
+    <body>
+        <header>
+            <img src="../img/CGI_Logo_color%5B538%5D.png"/>
+            <h1>PORTAIL SWAT</h1>
+            <div id="connexion">
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="id_user">Identifiant :</label>
+                    <input type="text" name="id_user">
+                </div>
+                <div class="champ_connexion">
+                    <label class="connexion_label" for="mdp_user">Mot de passe :</label>
+                    <input type="password" name="mdp_user"/>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="lien_menu"><div >Accueil</div></a></li>
+                <li><a href="ajout_demande.html" class="lien_menu"><div >Ajouter une offre</div></a></li>
+            </ul>
+        </nav>
+        <div id="page">
+            <aside>
+            </aside>
+            <section id="sectionAjoutReponse">
+                <h2>Ajout d'une réponse</h2>
+
+
+                <div class="encadre">
+                    <form id="ajout_demande">
+                        <div class="ajout_reponse">
+                            <div>
+                                <label for="dateDebutPresta">Début de prestation</label>
+                                <input  type="date" name="dateDebutPresta"/>
+
+                                <label for="dateFinPresta">Fin de prestation</label>
+                                <input  type="date" name="dateFinPresta"/>
+                            </div>
+                            <label for="profilDemandePresta">Profil demandé :</label>
+                            <textarea type="text" name="profilPresta"></textarea>
+
+                            <label for="nbreJoursDemandePresta">Nbre de jours demandés:</label>
+                            <input type="text" name="nbreJoursDemandePresta"/>
+                        </div>
+                        <div class="encadre2 ajout_reponse">
+                            <label for="profilPropose">Profil proposé :</label>
+                            <input type="text" name="profilPropose" />
+
+
+                            <label for="nbreJoursProposePresta">Nbre de jours proposés:</label>
+                            <input type="text" name="nbreJoursProposePresta"/>
+
+                            <label for="tjm">TJM (HT)</label>
+                            <input name="tjm" type="text"/>
+
+                            <label for="commentaires">Commentaire (Remise,...)</label>
+                            <textarea name="commentaires"></textarea>
+                            <select>
+                                <option value="salarie">Salarié SCII</option>
+                                <option value="sousTraitant">Sous-traitant</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Ajouter la réponse" />
+
+
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>Tous droits réservés</p>
+        </footer>
+        <script   src="https://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
+        <script src="../js/detail_demande.js"></script>
+    </body>
+</html>

@@ -292,3 +292,21 @@ font-weight: bold;
 #boutonAjoutRep{
 
 }
+
+.hide {
+    display: none;
+}
+
+.bouton2 {
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    width: 160px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#boutons_detail_demande_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

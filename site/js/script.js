@@ -13,7 +13,7 @@ $.ajax({
 
 	success : function( mydata ) {
 		for(i=0; i<mydata.length;i++){
-            $("#demandes").append("<a href =\"html/detail_offre.html \" class =\"lien_detail\"><div class=\"demande\"><h2>"+mydata[i].libelleDemande+"</h2><div class=\"first_line_demande\"><p><span class=\"gras\">Enseigne :</span> <span>COVEA</span></p><p><span class=\"gras\">Statut : </span><span>"+mydata[i].idStatut.libelleStatut+"</span></p></div><p><span class=\"gras\">Code Affaire :</span> <span>"+mydata[i].codeAffaireDemande+"</span></p><p>"+ mydata[i].detailsPrestationDemande+"</p><div class=\"last_line_demande\"><p>Mise en ligne : <span>"+mydata[i].dateDebutDemande+"</span></p><p>Dâte de clôture : <span>"+mydata[i].dateFinDemande+"</span></p></div></div></a>");
+            $("#demandes").append("<a href =\"html/detail_offre.html?id="+ mydata[i].idDemande +" \" class =\"lien_detail\"><div class=\"demande\"><h2>"+mydata[i].libelleDemande+"</h2><div class=\"first_line_demande\"><p><span class=\"gras\">Enseigne :</span> <span>COVEA</span></p><p><span class=\"gras\">Statut : </span><span>"+mydata[i].idStatut.libelleStatut+"</span></p></div><p><span class=\"gras\">Code Affaire :</span> <span>"+mydata[i].codeAffaireDemande+"</span></p><p>"+ mydata[i].detailsPrestationDemande+"</p><div class=\"last_line_demande\"><p>Mise en ligne : <span>"+mydata[i].dateDebutDemande+"</span></p><p>Dâte de clôture : <span>"+mydata[i].dateFinDemande+"</span></p></div></div></a>");
 
         }
 	}

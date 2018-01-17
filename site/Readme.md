@@ -1,4 +1,4 @@
-# Etat du développement du site :#
+# Etat du développement du site :
 
 Dans les grandes lignes :
  - la page index.html permet de consulter les différentes offres du portail COVEA. Une fois reliée à la base de données elle affiche toutes les offres avec un filtrage possible par critères.

@@ -1,3 +1,5 @@
+// ATTENTION : modifier l'adresse http de liaison avec le serveur à chaque ligne "url"
+
 // Fonction permettant de creer une demande
 function creerDivDemande(intituleDemande, statutDemande, codeAffaireDemande, dateDebutDemande, dateFinDemande){
 }

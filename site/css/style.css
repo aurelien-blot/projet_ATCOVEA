@@ -1,3 +1,4 @@
+
 /* CSS de la structure générale de la page*/
 
 body {
@@ -226,7 +227,7 @@ font-weight: bold;
 }
 
 
-/* PAGE AJOUT DEMANDE ET REPONSE */
+/* PAGE AJOUT DEMANDE*/
 
 
 .ajout_demande {
@@ -235,8 +236,8 @@ font-weight: bold;
 
 .ajout_date_demande {
     margin: 10px 60px 10px 20px;
-    display: inline-block;
-    
+    float: left;
+
 }
 
 .ajout_date_demande label{
@@ -245,7 +246,7 @@ font-weight: bold;
 
 .ajout_interloc_demande {
     margin: 10px 70px 10px 20px;
-    display: inline-block;
+    float: left;
 }
 
 .ajout_interloc_demande input{
@@ -282,5 +283,4 @@ font-weight: bold;
 .ajout_interloc_achat_demande {
     margin: 40px 20px 5px 20px;
     
-    }
-
+}

@@ -14,3 +14,4 @@
   - si un réponse a déjà été apportée, il doit être possible en passant par la page detail_demande.html de traiter le suivi de l'assistance.
   -  si enfin l'assistance est terminée, par la page detail_demande.html il doit être possible pour le client de faire un retour sur sa satisfaction.
   - il reste à corriger l'insertion des données dans la base de données via le site.
+  - Les pages HTML doivent être portées sur le serveur JSP (en .jsp ou .html)

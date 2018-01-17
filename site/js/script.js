@@ -1,8 +1,8 @@
-
+// Fonction permettant de creer une demande
 function creerDivDemande(intituleDemande, statutDemande, codeAffaireDemande, dateDebutDemande, dateFinDemande){
-
 }
 
+// Connexion au serveur
 $.ajax({
 	type: "GET",
 	url : "http://192.168.43.175:8080/ATCOVEA_RESTful/webresources/epsi.lemans.demande",

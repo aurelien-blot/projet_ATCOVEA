@@ -5,8 +5,8 @@
 - JSP			:	Serveur web
 
 Environnement de dev : 
-- Netbeans (Java EE & JSP)
-- WAMP Server (MySQL)
+- Netbeans 8.2 (JDK 8)
+- WAMP Server 3.1.0 64bit (MySQL 5.7.19)
 
 
 Attention : le serveur Glassfish doit être modifié pour générer des ressources JSON, (note : le XML est utilisé par défaut) il semblerait qu'il y ait un BUG dans une librairie 
@@ -15,6 +15,7 @@ Lorsque le .jar "org.eclipse.persistence.moxy.jar" est remplacé, la génératio
 
 Les serveurs MySQL et JSP n'ont rien de spécifique.
 
+## Flow
 
 Le but de la solution est de consommer le Service REST en javascript (jQuery.ajax); le service REST générant des ressources JSON représentant l'état de la base de données.
 Le serveur JSP n'est utilisé que pour héberger les pages web et code javascript; on n'accède pas à la base de données en Java.

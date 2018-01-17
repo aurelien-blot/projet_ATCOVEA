@@ -5,6 +5,7 @@
 
 Le dossier est constitué de plusieurs éléments :
 
+- le projet initial : Sujet SWAT- Suivi des AT v1[754].odt
 - le dossier \site contenant les éléments du site internet avec son propre README
 - le dossier \COVEA_RESTful contenant les éléments du serveur RESTful et son propre README
 - le dossier maquettes contenant des maquettes du site

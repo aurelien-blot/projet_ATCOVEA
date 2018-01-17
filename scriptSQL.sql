@@ -170,6 +170,8 @@ CREATE TABLE attribution_droit(
 
 #------------------------------------------------------------
 # Table: tables
+#
+# Cette table regroupe toute les tables de la base de données
 #------------------------------------------------------------
 
 CREATE TABLE tables(

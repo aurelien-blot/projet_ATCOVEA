@@ -277,5 +277,44 @@ font-weight: bold;
     display: flex;
     flex-direction: column;
     margin: 10px,auto,10px,auto;
+    width: 600px;
+}
+#champDates{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0 20px 0;
+}
+.ajout_reponse label{
+    margin-bottom: 3px;
+    margin-top: 5px;
+
+}
+.ajout_reponse label{
+    margin-top: 10px;
 }
 
+.ajout_reponse textarea{
+    margin-bottom: 3px;
+    margin-top: 5px;
+
+}
+.ajout_reponse select{
+    margin-bottom: 8px;
+    margin-top: 5px;
+    width: 150px;
+}
+
+#boutonAjoutRep{
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.champMoyen{
+    width: 110px;
+}
+
+.champPetit{
+    width: 50px;
+}

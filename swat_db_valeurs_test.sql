@@ -17,9 +17,9 @@ INSERT INTO `interlocuteur_technique` (`nom_interloc_technique`, `prenom_interlo
 ('Lannier', 'robert','lannier@gmail.com', '0243567844'),('breton', 'laurent', 'breton@hgmail.com', '0244665588'),
 ('graton', 'jean', 'graton@hgmail.com', '0244665588'),('bijoux', 'gerard', 'bijoux@hgmail.com', '0244665588'),('roti', 'paul', 'roti@hgmail.com', '0244555588');
 
-INSERT INTO `developpeur` (`nom_developpeur`, `prenom_developpeur`, `competences_developpeur`, `cv`) VALUES
-('LEROY', 'Stéphane', 'HTML\r\nJS\r\nCSS', 'http://www.google.fr'),('GROS', 'Jean', 'JS', 'http://www.elec-auto.com'),
-('BROUTE', 'Jean', 'JS', 'http://www.elec-auto.com'),('SATONS', 'louise', 'Java', 'http://www.elec-auto.com'),('LONS', 'MARIE', 'Java', 'http://www.elec-auto.com');
+INSERT INTO `developpeur` (`nom_developpeur`, `prenom_developpeur`, `competences_developpeur`, `mail_developpeur`, `cv`) VALUES
+('LEROY', 'Stéphane', 'HTML\r\nJS\r\nCSS', 'stephane@leroy.fr'),('GROS', 'Jean', 'JS', 'jean@gros.fr'),
+('BROUTE', 'Jean', 'JS', 'jean@broute.fr'),('SATONS', 'louise', 'Java', 'louise@satons.fr'),('LONS', 'MARIE', 'Java', 'marie@lons.fr');
 
 INSERT INTO `demande` (`code_affaire_demande`,`intitule_demande`, `libelle_demande`, `date_debut_demande`, `date_fin_demande`, `contexte_demande`, `details_prestation_demande`, `zone_geographique`, `id_interloc_technique`, `id_statut`,`id_interet`, `id_acheteur`) VALUES
 ('123ABC', 'Modification de la fonction 1',`AT-5164-458A-Test`, '2017-11-22', '2017-11-30', 'contexte 1', 'détails demande 1', 'Le Mans', 2, 1, 1, 1),

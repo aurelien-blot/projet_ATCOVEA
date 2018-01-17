@@ -2,7 +2,7 @@
 
 La logique générale du portail SWAT est de pouvoir consulter les offres du portail Covea, d'en enregistrer de nouvelles, d'y apporter une réponse ou non à une offre en présentant un ou plusieurs profils ainsi qu'un devis des heures nécessaires. Le portail SWAT permet ensuite de faire un suivi sur l'assistance puis d'enregistrer la satisfaction du client.
 
-##Contenu
+### Contenu
 
 Le dossier est constitué de plusieurs éléments :
 
@@ -17,7 +17,7 @@ Le dossier est constitué de plusieurs éléments :
 - un script SQL pour créer la structure de la base de données : scriptSQL.sql
 - un script SQL pour remplir la base de données avec des données test : swat_db_valeurs_test.sql
 
-##Guide d'utilisation :
+### Guide d'utilisation :
 
 Vous trouverez dans ce dossier tous les éléments permettant de poursuivre le projet.
 De la partie conception jusqu'à la partie développement du site internet.

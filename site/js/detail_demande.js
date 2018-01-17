@@ -1,3 +1,5 @@
+// ATTENTION : modifier l'adresse http de liaison avec le serveur à chaque ligne "url"
+
 // Récupération de l'id url de page
 var url = window.location.search;
 var id_offre = url.substring(url.lastIndexOf("=")+1);

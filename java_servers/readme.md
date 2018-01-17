@@ -11,6 +11,7 @@ Environnement de dev :
 
 Attention : le serveur Glassfish doit être modifié pour générer des ressources JSON, (note : le XML est utilisé par défaut) il semblerait qu'il y ait un BUG dans une librairie 
 (cf : https://stackoverflow.com/questions/33722764/glassfish-error-when-producing-json )
+
 Lorsque le .jar "org.eclipse.persistence.moxy.jar" est remplacé, la génération de ressources en JSON est fonctionnelle.
 
 Les serveurs MySQL et JSP n'ont rien de spécifique.

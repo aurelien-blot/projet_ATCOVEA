@@ -55,10 +55,10 @@
 <!-- BOUTONS -->
                 </div>
                 <div id="boutons_detail_demande" class="encadre">
-                    <button id="bouton1" class="bouton">Demande</button>
-                    <button id="bouton2" class="bouton">Réponse</button>
-                    <button id="bouton3" class="bouton">Suivi</button>
-                    <button id="bouton4" class="bouton">Retour Client</button>
+                <button id="bouton1" class="bouton">Demande</button>
+                <button id="bouton2" class="bouton hide">Réponse</button>
+                <button id="bouton3" class="bouton hide">Suivi</button>
+                <button id="bouton4" class="bouton hide">Retour Client</button>
                 </div>
 <!-- BLOC PRINCIPAL -->
                 <div id="global_detail_demande">
@@ -123,17 +123,39 @@
                                 </div>
                             </div>
                         </div>
+<!-- BOUTONS Répondre et Modifier -->
+                        <div id="sous_detail_demande" class="encadre2">
+			                <div id="boutons_detail_demande_2">
+			                <input id="bouton_demande_repondre" class="bouton2" type="button" name="Répondre" value="Répondre" onclick="self.location.href='ajout_reponse.html' ">
+			                <input id="bouton_demande_modifier" class="bouton2" type="button" name="Répondre" value="Modifier" onclick="self.location.href='page_création_demande'">
+			                </div>
+                        </div>
 <!-- REPONSE DEMANDE -->
                     </div>
                     <div id="reponse_detail_demande" class="encadre">
                         <h3>Réponse demande</h3>
                         <div class="champ_detail_demande">
+                            <label for="profil_demande">Profil demandé :</label>
+                            <span class="profil_demande">débutant</span>
+                        </div>
+
+                        <div class="champ_detail_demande">
+                            <label for="profil_propose">Profil proposé :</label>
+                            <span class="profil_propose">expert</span>
+                        </div>
+
+
+                        <div class="champ_detail_demande">
                             <label for="sous_traitant_reponse">Sous traitant :</label>
                             <span class="sous_traitant_reponse">oui / non</span>
                         </div>
                         <div class="champ_detail_demande">
-                            <label for="nb_jours">Nombre de jours :</label>
-                            <span class="nb_jours">10 jours</span>
+                            <label for="nb_jours_demande">Nombre de jours demandés:</label>
+                            <span class="nb_jours_demande">10 jours</span>
+                        </div>
+                        <div class="champ_detail_demande">
+                            <label for="nb_jours_propose">Nombre de jours proposés:</label>
+                            <span class="nb_jours_propose">10 jours</span>
                         </div>
                         <div class="champ_detail_demande">
                             <label for="taux_journalier">Taux journalier :</label>
@@ -147,13 +169,27 @@
                             <label for="date_fin">Date de fin :</label>
                             <span class="date_fin">JJ/MM/AAAA</span>
                         </div>
-                    </div>
+<!-- BOUTONS Répondre et Modifier -->
+                        <div id="sous_detail_demande" class="encadre2">
+			                <div id="boutons_detail_demande_2">
+			                <input id="bouton_reponse_modifier" class="bouton2" type="button" name="Répondre" value="Modifier la réponse" onclick="self.location.href='page_modification_reponse'">
+			                <input id="bouton_reponse_creation_suivi" class="bouton2" type="button" name="Répondre" value="Création du suivi" onclick="self.location.href='page_creation_suivi'">
+			                </div>
+                        </div>
+                        </div>
 <!-- SUIVI DEMANDE -->
                     <div id="suivi_detail_demande" class="encadre">
                         <h3>Suivi demande</h3>
                         <p>
                             Suivi de la demande
                         </p>
+<!-- BOUTONS Répondre et Modifier -->
+                        <div id="sous_detail_demande" class="encadre2">
+			                <div id="boutons_detail_demande_2">
+			                <input id="bouton_suivi_modifier" class="bouton2" type="button" name="Répondre" value="Modifier le suivi" onclick="self.location.href='page_modification_suivi'">
+			                <input id="bouton_suivi_retour_client" class="bouton2" type="button" name="Répondre" value="Créer un retour client" onclick="self.location.href='page_retour_client'">
+			                </div>
+                        </div>
                     </div>
 <!-- RETOUR CLIENT -->
                     <div id="retour_client_detail_demande" class="encadre">
@@ -161,6 +197,12 @@
                         <p>
                             Retour Client
                         </p>
+<!-- BOUTONS Répondre et Modifier -->
+                        <div id="sous_detail_demande" class="encadre2">
+			                <div id="boutons_detail_demande_2">
+			                <input id="bouton_retour_client_modifier" class="bouton2" type="button" name="Répondre" value="Modifier le retour client" onclick="self.location.href='page_modification_retour_client'">
+			                </div>
+                        </div>
                     </div>
                 </div>
             </section>

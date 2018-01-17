@@ -5,8 +5,8 @@
 - JSP			:	Serveur web
 
 Environnement de dev : 
-	Netbeans (Java EE & JSP)
-	WAMP Server (MySQL)
+- Netbeans (Java EE & JSP)
+- WAMP Server (MySQL)
 
 
 Attention : le serveur Glassfish doit être modifié pour générer des ressources JSON, (note : le XML est utilisé par défaut) il semblerait qu'il y ait un BUG dans une librairie 
